@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1, minimum-scale=1"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="home.css">
+        <title> OKUN X-sPACE/Home Page</title>
+    </head>
+    <body>
+        <!--Div to display search items if found. This display is initially set to none before modified with jaavascript-->
+        <div id="new">   </div>
+
+        <!--button to close search display interface-->
+        <button type="button" id = "modalSearch">Close Search Modal</button>
+
+        <!--Parent div that contains everything in the header-->
+        <div class="headerContainer"> 
+
+            <!--First item in the parent div-->
+            <div class="headerItem1"><i class='bx bxl-graphql'></i></div>
+            
+            <!--Second Item in the parent div (including Nav list) -->
+            <div class ="headerItem2">
+                <!--Navigation list-->
+                <ul>
+                    <li class="firstList"><a href="home.html">Home</a></li>
+                    <li class=" firstList"><a href="features.html">Our Features</a></li>
+                    <li class=" firstList"><a href="about.html">About X-sPace</a></li>
+                </ul>
+
+                <!-- This is a sub header in the second item for serach queries-->
+                <div id="headerItem4" tabIndex="0">
+                    <i class='bx bx-search' onclick="searchQueries()"></i> 
+                    <input type="text" id="searchField">
+                </div>
+            </div>
+
+            <!--Third Item in the parent div-->
+            <div class="headerItem3">
+                <br/>
+                <span class = "extra1"> <i class='bx bx-moon'></i>Goto dark Mode</span>
+            </div>
+        </div>
+        
+        <!--Parent div that contains everything in the body-->
+        <div class="bodyContainer">
+            <!-- First item in the body-->
+            <div class = "bodyItem1">
+                <p id="first">Multi-Tasking</p>
+                <p id="second">made ease with</p>
+                <p id="third"> OKUN X-SPACE</p>
+            </div>
+
+           <!-- Second item in the body-->
+            <div class="bodyItem2">
+                <p id="fourth"> Try our:</p>
+
+                <!--Links for all features on the app and descriptions-->
+                <ul class="featureLinksParent">
+                    <li class="linksHolder"><a class="featureLinks" href="calculator.html"> Online Calculator</a> 
+                        <div class="desc"> Perform mathematical expressions here</div>
+                    </li>
+                    
+                    <li class="linksHolder"><a class="featureLinks" href="slider.html"> Online image getter\slider</a>
+                    <div class="desc">get varieties of image you want and slide through them</div>
+                    </li>
+                    
+                    <li class="linksHolder"><a class="featureLinks" href="notes.html"> Online Notes</a>
+                    <div class="desc"> Write your important notice here</div>
+                    </li>
+                   
+                    <li class="linksHolder"><a class="featureLinks" href="spacetodolist.html"> Online Todo List</a>
+                        <div class="desc"> Write your task here and set a reminder</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Parent div for footer container-->
+        <div class="footerContainer">
+            <!--first item on the footer-->
+            <p style="font-style: italic; color:white;"> @ <br>OKUN X-sPACE</p>
+            <p style="color: white"> Contact us via:</p>
+
+            <!--second item on the footer-->
+            <div class="footerItem1">
+                <a href="https://wa.me/+2349073502307" id="fifth"><i class='bx bxl-twitter'> </i></a>
+                <a href="https://www.facebook.com/okunola.olatunde.581" id="fifth"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="" id="fifth"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+            <!--Last item on the footer-->
+            <p style="color: white;"> <i>&copy; 2023 OKUN X-sPACE all right reserved</i> </p>
+            </div>
+            
+        <!--script to execute for the page-->
+        <script src="home.js"></script>
+        
+    </body>
+</html>

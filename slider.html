@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1, minimum-scale=1"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="home.css">
+        <title> OKUN'S X-sPACE/Home Page</title>
+        <style>
+            div.searchEnclose{
+                background-color: gainsboro;
+                border-radius: 0.5rem;
+                width: 70%;
+                margin:auto;
+                top:0.5rem;
+                position:relative;
+                display: grid;
+                grid-template-columns: 10% 90%;
+            }
+            div.searchEnclose:focus{
+                width: 90%
+            }
+            #searchImage{
+                border-color: gainsboro;
+                width:100%;
+                background-color: gainsboro;
+                border:none;
+            }
+            #searchImage:focus{
+                 outline: 2px solid black;
+                 border-radius: 0.5rem;
+            }
+            .sarri{
+                font-size:1.3rem;
+            }
+            .displayImage{
+                border: 3px solid #0C356A;
+                height: 25rem;
+                width:20rem;
+                margin:auto;
+                position: relative;
+                top:0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="new">
+           
+        </div>
+        <button type="button" id = "modalSearch">Close Search Modal</button> 
+        <div class="headerContainer"> 
+            <div class="headerItem1"><i class='bx bxl-graphql'></i></div>
+            <div class ="headerItem2">
+                <ul>
+                    <li class="firstList"><a href="home.html">Home</a></li>
+                    <li class=" firstList"><a href="features.html">Our Features</a></li>
+                    <li class=" firstList"><a href="about.html">About X-sPace</a></li>
+                </ul>
+                <div id="headerItem4" tabIndex="0">
+                    <i class='bx bx-search' onclick="searchQueries()"></i> 
+                    <input type="text" id="searchField">
+              </div>
+              
+            </div>
+            <div class="headerItem3">
+                <br/>
+                <span class = "extra1"> <i class='bx bx-moon'></i>Goto dark Mode</span>
+            </div>
+            
+        </div>
+        <div class="searchEnclose">
+            <i class='bx bx-search sarri' onclick="searchQuerys()"></i>
+             <input type="text" id="searchImage" placeholder="input image search name">
+            </div>
+
+        <div class="displayImage">   </div>
+
+        <div class="displayResult"></div>
+
+        <!-- Parent div for footer container-->
+        <div class="footerContainer">
+            <!--first item on the footer-->
+            <p style="font-style: italic; color:white;"> @ <br>OKUN X-sPACE</p>
+            <p style="color: white"> Contact us via:</p>
+
+            <!--second item on the footer-->
+            <div class="footerItem1">
+                <a href="https://wa.me/+2349073502307" id="fifth"><i class='bx bxl-twitter'> </i></a>
+                <a href="https://www.facebook.com/okunola.olatunde.581" id="fifth"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="" id="fifth"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+            <!--Last item on the footer-->
+            <p style="color: white;"> <i>&copy; 2023 OKUN X-sPACE all right reserved</i> </p>
+            </div>
+            
+        <!--script to execute for the page-->
+        <script src="home.js"></script>
+        <script src="slider.js"></script>
+    </body>
+</html>
