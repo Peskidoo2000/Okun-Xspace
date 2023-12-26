@@ -6,7 +6,7 @@ body{
     overflow-y: auto;
     height:25rem;
 }
-@media(max-width:319px){
+@media(max-width:315px){
 body{
     visibility:hidden;
 }
