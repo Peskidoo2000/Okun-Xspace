@@ -1,3 +1,8 @@
+@media(max-width:315px){
+body{
+    visibility:hidden;
+}
+}
 body{
     font-family:sans-serif;
     box-sizing: border-box;
@@ -6,11 +11,7 @@ body{
     overflow-y: auto;
     height:25rem;
 }
-@media(max-width:315px){
-body{
-    visibility:hidden;
-}
-}
+
 div.headerContainer{
     display: grid;
     grid-template-columns: 17% 60% 22%;
